@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+    {% block title %}Madlib Game{% endblock %}
+
+
+{% block content %}
+    <p>There once was a {{ color }} {{ noun }} sitting in the Hackbright Lab. When {{ person }} went to pick it up, it burst into flames in a totally 
+        {% for adjective in adjective_list %} 
+            {{ adjective }} 
+        {% endfor %} way. 
+    {{ person }} then went to go {{ verb }}. It was a fun time and {{ person }} ate {{ number }} melons before going home.</p>
+{% endblock %}

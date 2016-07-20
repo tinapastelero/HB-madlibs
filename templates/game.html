@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+    {% block title %}Game{% endblock %}
+    {% block content %}
+    <form action='/madlib'>
+        Please give me a person. <input type='text' name='person'><br>
+        Please give me a color.
+        <select name="color">
+            <option value="red">Red</option>
+            <option value="yellow">Yellow</option>
+            <option value="blue">Blue</option>
+        </select>
+        <br>
+        Please give me a noun. <input type='text' name='noun'><br>
+        Please give me an adjective.
+            <input type='checkbox' name='adjective' value='fast'>Fast
+            <input type='checkbox' name='adjective' value='funny'>Funny
+            <input type='checkbox' name='adjective' value='fun'>Fun
+            <input type='checkbox' name='adjective' value='fantabulous'>Fantabulous<br>
+        Please give me a verb. <input type='text' name='verb'><br>
+        Please give me an number. <input type='text' name='number'><br>
+        <input type='submit' value='PRESS ME'>
+    </form>
+{% endblock %}

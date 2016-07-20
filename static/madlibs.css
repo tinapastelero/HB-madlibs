@@ -1,0 +1,15 @@
+h1{
+    color: blue;
+    font-family: cursive;
+    font-size: 20px;
+}
+p{
+    color: purple;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+form{
+    color: orange;
+    font-family: serif;
+    font-size: 30px;
+}
