@@ -4,8 +4,13 @@
 
 {% block content %}
     <p>There once was a {{ color }} {{ noun }} sitting in the Hackbright Lab. When {{ person }} went to pick it up, it burst into flames in a totally 
-        {% for adjective in adjective_list %} 
-            {{ adjective }} 
-        {% endfor %} way. 
+        {% for i in range(adjective_list|length) %}
+            {% if i < adjective_list|length - 1 %}
+                {{ adjective_list[i] }},
+            {% else %}
+                and {{ adjective_list[i] }}
+            {% endif %}
+        {% endfor %} 
+        way. 
     {{ person }} then went to go {{ verb }}. It was a fun time and {{ person }} ate {{ number }} melons before going home.</p>
 {% endblock %}
